@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(94,35,220,255);
+    display: flex;
+    box-shadow: 1px 1px 20px rgba(241, 237, 237, 0.863);
+    position: sticky;
+    top: 0;
+}
+.nav2{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    box-shadow: 1px 1px 20px rgba(241, 237, 237, 0.863);
+    position: sticky;
+    top: 50;
+}
+.nav1con{
+    border-right: 1px double rgba(255, 0, 0, 0.493);
+    margin-top: 5px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+.nav2con{
+    /* padding-left: 15px; */
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-color:#08D9D6;
+    color: #252A34;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #E84545;
+    /* color: gray; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: #2B2E4A;
+}
+#city{
+    width: 200px;
+    height: 35px;
+    /* margin-left: 20px; */
+    margin-top: 3px;
+    padding-left: 12px;
+    border-radius: 5px;
+    line-height: 20px;
+    /* text-decoration: none; */
+    font-family: Arial;
+
+}
+select option{
+    /* height: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 200px;
+    margin: 100px;
+    white-space:nowrap;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    background-color: white;
+    
+}
+.body1{
+    height: 503px;
+    width: 470px;
+    border: 2px solid black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+.bodytitle{
+    height: 60px;
+    width: 470px;
+    background-color: rgb(224, 204, 204);
+    position: static;
+    /* display: flex; */
+}
+.bodp1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-top: 12px;
+}
+.bodymain{
+    width: auto;
+    height: 442px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.pgs{
+    height: 350px;
+    width: auto;
+    border: 1px solid gray;
+}
+.emp{
+    height: 50px;
+    width: auto;
+    display: none;
+    text-align: center;
+    padding-top: 30px;
+    /* background-color: ; */
+    border: 1px solid gray;
+}
+.picbox{
+    position:relative;
+    z-index: -1;
+    margin-bottom: 0;
+    height: 200px;
+    width: 470px;
+}
+.pics{
+    /* padding-top: 43px; */
+    display: flex;
+    position:absolute;
+    animation: slide 20s infinite;
+    opacity: 0;
+}
+.pics img{
+    height: 200px;
+    width: 460px;
+}
+.pgtxt{
+    font-family:monospace;
+}
+.pgname{
+    font-size: 20px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.price{
+    font-size: 20px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.loc{
+    font-size: 14px;
+    clear: both;
+    margin-left: 15px;
+    padding-top: 2px;
+}
+.reset{
+    margin-left: 40px;
+    height: 30px;
+    width: 95px;
+    /* color:gray; */
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+
+}
+.gen{
+    height: 20px;
+    width: 80px;
+    border: 1px solid ;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    margin-left: 15px;
+    font-size: 13px;
+    margin-top: 20px;
+    float: left;
+}
+.save{
+    height: 19px;
+    width: 70px;
+    border: 1px solid rgb(241, 26, 62);
+    border-radius: 10px;
+    background-color:rgb(240, 101, 124) ;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    margin-right: 20px;
+    margin-top:20px;
+    padding-top: 2px;
+    text-align: center;
+}
+.share{
+    height: 20px;
+    width: 180px;
+    clear: both;
+    border: 1px solid rgb(108, 108, 247) ;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    margin-left: 15px;
+    font-size: 13px;
+    margin-top: 10px;
+    float: left;
+}
+
+iframe{
+    right: 0;
+    height: 82.5%;
+    width: 65%;
+    position: fixed;
+    /* top: 100px; */
+
+}

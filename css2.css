@@ -1,0 +1,28 @@
+@keyframes slide{
+    0%{opacity: 1;margin-left: 1400px;}
+    5%{opacity: 1;margin-left: 0px;}
+    25%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes slide1{
+    0%{opacity: 1;}
+    5%{opacity: 1;}
+    25%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    100%{opacity: 0;}
+}
+a{
+    text-decoration: none;
+    /* color:black; */
+}
+.savehead{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+
+}

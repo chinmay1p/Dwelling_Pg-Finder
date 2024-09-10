@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Dwelling.com</title>
+        <link rel="icon" href="logo.png" type="image/jpeg">
+        <link type="text/CSS"  rel="stylesheet" href="css1.css">  
+        <link type="text/CSS"  rel="stylesheet" href="css2.css">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery.js"></script>
+        <script src="js1.js"></script>
+        <script src="js2.js"></script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="nav1con" style="width: 200px;">
+                <a href="index.html"><img src="logo3.PNG" style="width: 180px;height: 30px;margin-top: 5px;"></a>
+            </div>
+            <div class="nav1con" style="width: 240px;">
+                <select name="city" id="city" onChange="go()">
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="anand">Anand</option>
+                    <option value="gandhinagar">Gandhinagar</option>
+                </select>
+            </div>
+            <div class="nav1con" style="width: 500px;"></div>
+            <div class="nav1con" style="width: 150px;">
+                <div style="width: 120px;display: flex;height: 30px;background-color: white;text-align: center;margin-left: 15px;margin-top: 5px;border-radius: 5px;color: black;">
+                    <p style="font-size: 12px;margin-left: 10px;float: left;padding-top: 8px;">List Property</p>
+                    <div style="height: 20px;border-radius: 5px;margin-left: 2px;width: 30px;background-color:  rgba(255,63,108,255);color: white;margin-top: 5px;">
+                        <p style="font-size: 10px;margin-top: 4px;">Free</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav1con" style="width: 150px;">
+                <a href="options.html" target="_blank"><p style="margin-top: 7px;color: white;">&#127968; Saved!</p></a>
+            </div>
+            <div class="nav1con" style="width: 130px;">
+                <p style="margin-top: 3px;"><a href="login.html" target="_blank"><img src="pro.PNG"></a></p>
+            </div>
+
+        </div>
+        <div class="nav2">
+            <form id="form1">
+                <select name="gender" id="gender" class="nav2con">
+                    <option value="any" disabled selected hidden>Gender</option>
+                    <option value="boy">Boys</option>
+                    <option value="girl">Girls</option>
+                    <option value="both">Both</option>
+                </select>
+                <select name="room" id="room" class="nav2con" style="width: 180px;">
+                    <option value="any" disabled selected hidden>Room Type</option>
+                    <option value="1">Private</option>
+                    <option value="2">Double Sharing</option>
+                    <option value="3">Triple Sharing</option>
+                </select>
+                <select name="food" id="food" class="nav2con">
+                    <option value="any" disabled selected hidden>Food available</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <select name="rent" id="rent" class="nav2con">
+                    <option value="any" disabled selected hidden>Rent</option>
+                    <option value=5>&lt; &#8377; 5k</option>
+                    <option value=10>&lt; &#8377; 10k</option>
+                    <option value=15>&lt; &#8377; 15k</option>
+                    <option value=20>&lt; &#8377; 20k</option>
+                </select>
+                <input type="button" class="btn" value="Apply Filters" onclick="go1()">
+                <input type="reset" value="Reset Filters" class="reset" onclick="go3()">
+            </form>
+        </div>
+        <iframe name="myframe" id="myframe" class="myframe" src="https://www.google.com/maps/d/embed?mid=1Sf5u36ImZxVK7cd_Nu4d1QRmZsOpeww&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+        <div class="body1">
+            <div class="bodytitle">
+                <p class="bodp1" style="float: left;">PG in </p>
+                <p class="bodp1" id="city1" style="float: inline-start;margin-left: 15px;font-weight: bold;">Ahmedabad</p><br>
+                <p class="bodp1" style="clear: both;font-size: 13px;margin-top: 15px;">Verified Paying Guest Accommodations</p>
+            </div>
+            <div class="bodymain">
+
+
+
+                <div class="pgs" id="ahm1">
+                    <div class="picbox">
+                        <div class="pics"><img src="ahm1_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ahm1_2.jpg"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ahm1_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ahm1_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <a href="ahm1_1.html" target="_blank" ><p class="pgname">Royal Town PG</p></a>
+                        <p class="price">&#8377;12000</p>
+                        <p class="loc">Vandemataram, Ahmedabad</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(51, 240, 51);">Boys</div>
+                    <button class="save" onclick="go4('ahm11')">SAVE</button>
+                    <div class="share">3 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="ahm2">
+                    <div class="picbox">
+                        <div class="pics"><img src="ahm2_1.jpg"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ahm2_2.jpg"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ahm2_3.jpg"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ahm2_4.png"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <a href="ahm1_2.html" target="_blank"><p class="pgname">A One PG</p></a>
+                        <p class="price">&#8377;15000</p>
+                        <p class="loc">Godrej Garden City, Ahmedabad</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(51, 240, 51);">Boys</div>
+                    <button class="save" onclick="go4('ahm12')">SAVE</button>
+                    <div class="share">2 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="ahm3">
+                    <div class="picbox">
+                        <div class="pics"><img src="ahm3_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ahm3_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ahm3_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ahm3_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <a href="ahm1_3.html" target="_blank" ><p class="pgname">Shiv Girls Accommodation</p></a>
+                        <p class="price">&#8377;9000</p>
+                        <p class="loc">Navrangpura, Ahmedabad</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(241, 79, 174);">Girls</div>
+                    <button class="save" onclick="go4('ahm13')">SAVE</button>
+                    <div class="share">2 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="ahm4">
+                    <div class="picbox">
+                        <div class="pics"><img src="ahm4_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ahm4_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ahm4_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ahm4_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">Riddhi Siddhi PG</p>
+                        <p class="price">&#8377;19000</p>
+                        <p class="loc">Satellite, Ahmedabad</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(70, 51, 240);">Both</div>
+                    <button class="save" onclick="go4('ahm14')">SAVE</button>
+                    <div class="share">3 Sharing Rooms</div>
+                </div>
+
+
+
+
+                <div class="pgs" id="ana1" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="ana1_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ana1_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ana1_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ana1_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <a href="ana1_1.html" target="_blank"><p class="pgname">Shivay Place, PG for girls</p></a>
+                        <p class="price">&#8377;4000</p>
+                        <p class="loc">Mota Bazaar, Anand</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(241, 79, 174);">Girls</div>
+                    <button class="save" onclick="go4('ana21')">SAVE</button>
+                    <div class="share">3 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="ana2" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="ana2_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ana2_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ana2_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ana2_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">Daughter's Home Girls Hostel</p>
+                        <p class="price">&#8377;9000</p>
+                        <p class="loc">Vallabh Vidyanagar, Anand</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(241, 79, 174);">Girls</div>
+                    <button class="save" onclick="go4('ana22')">SAVE</button>
+                    <div class="share">2 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="ana3" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="ana3_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="ana3_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="ahm4_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="ahm4_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">SATKRATU PG & HOSTEL SERVICES</p>
+                        <p class="price">&#8377;13000</p>
+                        <p class="loc">Vadtal Rd, Bakrol, Anand</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(70, 51, 240);">Both</div>
+                    <button class="save" onclick="go4('ana23')">SAVE</button>
+                    <div class="share">2 Sharing Rooms</div>
+                </div>
+
+
+
+
+                <div class="pgs" id="gan1" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="gan1_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="gan1_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="gan1_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="gan1_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">Pramukh PG and Hostel</p>
+                        <p class="price">&#8377;12000</p>
+                        <p class="loc">Pramukh abode, near, Surya Rd, Gandhinagar</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(51, 240, 51);">Boys</div>
+                    <button class="save" onclick="go4('gan31')">SAVE</button>
+                    <div class="share">3 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="gan2" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="gan2_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="gan2_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="gan2_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="gan2_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">THE BEST HOSTEL & PG</p>
+                        <p class="price">&#8377;10000</p>
+                        <p class="loc">Triangle Garden, Sector 8, Gandhinagar</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(51, 240, 51);">Boys</div>
+                    <button class="save" onclick="go4('gan32')">SAVE</button>
+                    <div class="share">2 Sharing Rooms</div>
+                </div>
+                <div class="pgs" id="gan3" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="gan3_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="gan3_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="gan3_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="gan3_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">Capital PG & Hostel</p>
+                        <p class="price">&#8377;12000</p>
+                        <p class="loc">Sargasan, Gandhinagar</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(241, 79, 174);">Girls</div>
+                    <button class="save" onclick="go4('gan33')">SAVE</button>
+                    <div class="share">Private Rooms</div>
+                </div>
+                <div class="pgs" id="gan4" style="display: none;">
+                    <div class="picbox">
+                        <div class="pics"><img src="gan4_1.PNG"></div>
+                        <div class="pics" style="animation-delay: 5s;"><img src="gan4_2.PNG"></div>
+                        <div class="pics" style="animation-delay: 10s;"><img src="gan4_3.PNG"></div>
+                        <div class="pics" style="animation-delay: 15s;"><img src="gan3_4.PNG"></div>
+                    </div>
+                    <div class="pgtxt">
+                        <p class="pgname">Rudraksha HOSTEL & PG</p>
+                        <p class="price">&#8377;7000</p>
+                        <p class="loc"> Sector 2, Gandhinagar</p>
+                    </div>
+                    <div class="gen" style="border-color: rgb(70, 51, 240);">Both</div>
+                    <button class="save" onclick="go4('gan34')">SAVE</button>
+                    <div class="share">3 Sharing Rooms</div>
+                </div>
+
+
+
+                
+                <div class="emp" id="empty">No results for given filters</div>
+            </div>
+            
+        </div>
+        
+
+    </body>
+
+
+</html>

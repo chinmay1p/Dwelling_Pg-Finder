@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" type="image/jpeg">
+    <link type="text/CSS"  rel="stylesheet" href="css1.css">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="nav" style="background-color: rgb(74, 95, 216);">
+        <div class="nav1con" style="width: 200px;">
+            <a href="index.html"><img src="logo3.PNG" style="width: 180px;height: 30px;margin-top: 5px;"></a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="buttonbox">
+                <div id="btn"></div>
+                <button type="button" class="togglebtn" onclick="login()">Login</button>
+                <button type="button" class="togglebtn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input">
+                <input type="text" id="name" class="inputfeild" placeholder="Enter Your Name" required ><br>
+                <input type="email" id="email" class="inputfeild" placeholder="Email id " required ><br>
+                <input type="number" id="mobileNumber" class="inputfeild" placeholder="Mobile Number" required><br><br>
+                <input type="submit" value="Login" id="log" class="submit">
+            </form>
+            <form id="register" class="input">
+                <input type="text" class="inputfeild" placeholder="Enter Your Name" required ><br>
+                <input type="email" class="inputfeild" placeholder="Email id " required ><br>
+                <input type="password" class="inputfeild" placeholder="Enter Password" required><br>
+                <input type="number" id="mobileNumber" class="inputfeild" placeholder="Mobile Number" required><br><br>
+                <input type="checkbox" id="agreeCheckbox" class="checkbox"><span>I Agree to terms & consitions</span><br><br>
+                <input type="submit" value="Register" id="log" class="submit">
+            </form>
+        </div>
+    </div>
+    <script>
+         let x=document.getElementById("login");
+         let y=document.getElementById("register");
+         let z=document.getElementById("btn");
+          function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left= "109px";
+          }
+          function login(){
+            x.style.left = "50px";
+            y.style.left = "480px";
+            z.style.left= "0px";
+          }
+        document.getElementById("login").addEventListener("submit", function(event) {
+        let mobileNumber = document.getElementById("mobileNumber").value;
+        var a=document.getElementById('name').value;
+        var b=document.getElementById('email').value;
+        if (mobileNumber.length !== 10 || isNaN(mobileNumber)) {
+        alert("Please enter all the details.");
+        event.preventDefault();
+        }
+        else{
+            alert("Login Successful!");
+            window.close();
+        }
+        });
+        document.getElementById("register").addEventListener("submit", function(event) {
+        var checkbox = document.querySelector(".checkbox");
+        if (!checkbox.checked) {
+        alert("Please agree to the terms & conditions to register.");
+        event.preventDefault();
+        }
+        else{
+            alert("Registration Successful!");
+            window.close();
+        }
+        });
+    </script>
+</body>
+</html>
